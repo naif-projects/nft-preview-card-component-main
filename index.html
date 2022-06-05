@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NFT preview card component</title>
+  </head>
+
+  <body class="bg-primary-dark min-h-screen px-4 font-qutfit">
+    <!-- main -->
+    <main class="min-h-screen flex items-center justify-center">
+      <!-- card -->
+      <div
+        class="p-6 rounded-2xl max-w-xs bg-primary-base shadow-2xl shadow-primary-dark"
+      >
+        <!-- image wrapper -->
+        <div class="group relative rounded-lg overflow-hidden">
+          <div
+            class="transition-colors ease-in hidden group-hover:flex group-hover:bg-secondary-base/60 absolute top-0 left-0 w-full h-full justify-center items-center"
+          >
+            <!-- hover icon -->
+            <img src="assets/icon-view.svg" alt="view icon" />
+          </div>
+
+          <!-- image -->
+          <img src="assets/image-equilibrium.jpg" alt=" equilibrium image" />
+        </div>
+
+        <!-- card content -->
+        <div>
+          <!-- title -->
+          <h2
+            class="text-white text-xl font-semibold mt-6 mb-4 hover:text-secondary-base hover:cursor-pointer"
+          >
+            Equilibrium #3429
+          </h2>
+
+          <!-- description -->
+          <p class="text-secondary-light">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+
+          <!-- info -->
+          <div class="flex justify-between mt-4">
+            <!-- price -->
+            <div class="flex items-center gap-2">
+              <img src="assets/icon-ethereum.svg" alt="ethereum icon" />
+
+              <span class="text-sm text-secondary-base font-semibold"
+                >0.041ETH</span
+              >
+            </div>
+
+            <!-- time left -->
+            <div class="flex items-center gap-2">
+              <img src="assets/icon-clock.svg" alt="clock icon" />
+
+              <span class="text-secondary-light font-normal text-xs">
+                3 days left
+              </span>
+            </div>
+          </div>
+
+          <!-- card footer -->
+          <footer
+            class="border-t border-secondary-light/20 mt-3 pt-4 flex gap-4 items-center"
+          >
+            <!-- user avatar -->
+            <img
+              class="w-8 h-8 rounded-full border border-white"
+              src="assets/image-avatar.png"
+              alt="user avatar"
+            />
+
+            <div>
+              <span class="text-secondary-light">Creation of</span>
+              <span
+                class="text-white hover:text-secondary-base hover:cursor-pointer"
+                >Jules Wyvern</span
+              >
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-6 text-center text-secondary-light">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded with <span class="text-red-500 font-serif"> ❤ </span>
+      by
+      <a
+        href="https://github.com/naif-projects"
+        class="underline underline-offset-2 text-lg text-white"
+        >Naif Sameer</a
+      >.
+    </footer>
+
+    <!-- scripts -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
